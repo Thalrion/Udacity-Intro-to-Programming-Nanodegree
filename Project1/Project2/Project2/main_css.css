@@ -1,0 +1,107 @@
+.name {
+  font-size: 32px;
+  margin-left: 15px;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+.sub-header {
+  font-size: 32px;
+  padding-right: 10px;
+  text-align: right;
+
+}
+.head-style {
+  background-color: #42bff4;
+  color: #383838;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0px;
+  border: 0px;
+}
+.section-style {
+  margin: 0px;
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  padding: 10px;
+  padding-left: 10px;
+  background-color: #d3d3d3
+}
+.resize {
+    width: 200px;
+    height: auto;
+    padding-left: 0px;
+    padding-bottom: 20px;
+}
+.right-box-style{
+  display: flex;
+  padding: 20px;
+  text-align: left;
+  border:3px solid black;
+  border-left-style:dotted;
+}
+.border_without_right{
+  border:3px solid black;
+  border-right-style: none;
+  padding-right: 10px;
+}
+ul{
+  list-style-type:inherit;
+  margin: 0px;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+li{
+  line-height: 30px;
+  font-size: 25px;
+  margin: 10px;
+}
+h1 {
+  font-size: 64px;
+  padding-left: 10px;
+}
+h2{
+  text-align: center;
+  font-size: 32px;
+  color: rgba(34,125,170,1);
+}
+
+/* CSS for the progress bars were taken from http://jessdesigntan.com/ because I
+thought they look awesome. I hope that´s okay because i not only wanted
+to get inspirated by other/better works but also know how to implement
+them in my work */
+.w3-progress-container {
+  width:425px;
+  height:0.7em;
+  position:relative;
+  background-color:#deeef5;
+  margin-bottom: 30px;
+
+  transition: opacity 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s ;
+  transition: all ease 0.5s ;
+}
+
+.w3-progress-container:hover {
+  opacity: 0.5;
+}
+
+.w3-progressbar {
+  background: rgba(34,125,170,1);
+  background: -moz-linear-gradient(left, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(34,125,170,1)), color-stop(100%, rgba(81,172,205,1)));
+  background: -webkit-linear-gradient(left, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+  background: -o-linear-gradient(left, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+  background: -ms-linear-gradient(left, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+  background: linear-gradient(to right, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+  height:100%;
+  position:absolute;
+  line-height:inherit;
+}
+.tag{
+  font-size: 24px;
+}
