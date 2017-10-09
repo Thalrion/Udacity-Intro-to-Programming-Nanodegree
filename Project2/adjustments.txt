@@ -1,0 +1,38 @@
+After every submission, I briefly explain what changes needed to be made and
+what I did to iterate my work:
+
+First Submission:
+______________________________________________________________________________________________________________________________
+
+REQUIRED:
+The rubric states "When player guesses correctly, new prompt shows with correct answer in the blank and....". 
+Your program doesn't meet this requirement as it doesn't print the paragraph replaced with correct answer everytime 
+after the user enters a correct one. Please create a copy of paragraph and each time when replacing the blank with correct answer, 
+print it in this if scope.
+
+CHANGES MADE:
+1. Defined a new function "copy_paragraph()" that prints the whole paragraph with the correct, replaced answer.
+
+REQUIRED:
+lines, comments, or function definitions)" but the function is exceeding the number of lines limit. Following are few suggestions:
+
+CHANGES MADE:
+1. Defined a new function "ask_for_trys" as a little helper function to reduce code size.
+2. removed empty print statements.
+3. initialized index / counter_paragraph in 1 line.
+4. "Outsorced" the whole ask-for-answer-part into a new function "ask_for_answer()".
+5. Reduced size of biggest function from 52 to 27 (without lines, comments, or function definitions). I know, its still
+more than required 18 lines but i completly lose the overview of the project if i use more helper-functions.
+
+REQUIRED:
+Rubric states "Each function includes a comment which explains the intended behavior, inputs (arguments), and outputs 
+(return values) (if applicable)" but this documentation doesn't tell anything about input (parameters) and output (return values). 
+You can write good documentation by following 'Docstring Conventions' in Python. Not only it helps other developers to understand 
+its use and functionality but is also used to create documentation websites using tools like Sphinx. 
+It is essential when you work in a team and helpful in future to write large applications. 
+I will suggest you read about 'Docstring Conventions' like PEP 257 to write better documentation.
+
+CHANGES MADE:
+1. Read "PEP 257 -- Docstring Conventions"
+2. Inserted a docstring-documentation in all functions explaining what they do / what input values are / what value it returns.
+__________________________________________________________________________________________________________________________________
