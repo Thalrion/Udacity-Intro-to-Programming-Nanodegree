@@ -5,6 +5,7 @@ Project 0
 
 Project 1
 
+https://thalrion.github.io/
+
 Project 2
 
-https://thalrion.github.io/
