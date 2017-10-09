@@ -26,3 +26,6 @@ Leveraged the power of Python to build a fill-in-the-gap-game using concepts lik
 - Structured data
 
 [View project](https://trinket.io/python/cce59a9364)
+
+## Project 3 Create a movie website (ongoing)
+
