@@ -5,7 +5,8 @@ Project 0
 
 Project 1
 
-https://thalrion.github.io/
+[View project](https://thalrion.github.io/)
 
 Project 2
 
+[View project](https://trinket.io/python/cce59a9364)
