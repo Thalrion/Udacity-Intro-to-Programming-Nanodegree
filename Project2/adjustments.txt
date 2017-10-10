@@ -36,3 +36,27 @@ CHANGES MADE:
 1. Read "PEP 257 -- Docstring Conventions"
 2. Inserted a docstring-documentation in all functions explaining what they do / what input values are / what value it returns.
 __________________________________________________________________________________________________________________________________
+
+Second Submission:
+__________________________________________________________________________________________________________________________________
+
+REQUIRED:
+The complete paragraph doesn't print after each question:
+
+CHANGES MADE:
+1.After first submission, changed it that everytime, the user answers correct, only the part up to the answer is printed.
+I guess i understanded it wrong, so now it should work like Udacity wants it to.
+
+Requirement: Code uses variables to avoid magic numbers
+
+CHANGES MADE:
+1. Magic numbers in "pretty_solution()" replaced with variable.
+
+Requirement: 
+Function "check_answers()" is too long
+
+CHANGES MADE:
+1. I still don´t understand why its such a matter if a function is 18 or 24 lines long as long as it´s readible and it works fine, but okay.
+2. Created a new function "answer_is_wrong()" inside the "check_answers()"-function to reduce length from 24 to 19.
+3. Created a new function "answer_is_right()" inside the "check_answers()"-function to reduce length from 19 to 16.
+4. Reduced length of function "difficulty()" from 21 to 18.
