@@ -1,6 +1,6 @@
 # Udacity-Intro-to-Programming-Nanodegree
 
-My Portfolio of Projects from my IPND
+Portfolio of Projects from the Udacity-IPND
 
 ## Project 0 Getting started with HTML
 
@@ -20,8 +20,8 @@ Leveraged the power of Python to build a fill-in-the-gap-game using concepts lik
 
 - Variables & strings
 - String manipulation
-- Functions (including PEP 257 -- Docstring Conventions)
-- Controlflow: If statements / While-loops / for-loops / try-except-else
+- Functions (including PEP 257 -- docstring conventions)
+- Controlflow: if statements / while-loops / for-loops / try-except-else
 - Handling user input
 - Structured data
 
@@ -31,7 +31,7 @@ Leveraged the power of Python to build a fill-in-the-gap-game using concepts lik
 
 Explored more advanced Python-Concepts & combined it with HTML/CSS to create a movie website.
 
-- Reuse and share code with Object-Oriented Programming
+- Reuse and share code with Object-Oriented Programming (OOP)
 - Using function from the Python Standard Library
-- Learning new concepts like Classes, Instances and Inheritance
+- Learning new concepts like classes, instances and inheritance
 
