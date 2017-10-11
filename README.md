@@ -29,7 +29,7 @@ Leveraged the power of Python to build a fill-in-the-gap-game using concepts lik
 
 ## Project 3 Create a movie website
 
-Explored more advanced Python-Concepts & combined it with HTML/CSS to create a movie website
+Explored more advanced Python-Concepts & combined it with HTML/CSS to create a movie website.
 
 - Reuse and share code with Object-Oriented Programming
 - Using function from the Python Standard Library
