@@ -27,5 +27,11 @@ Leveraged the power of Python to build a fill-in-the-gap-game using concepts lik
 
 [View project](https://trinket.io/python/cce59a9364)
 
-## Project 3 Create a movie website (ongoing)
+## Project 3 Create a movie website
+
+Explored more advanced Python-Concepts & combined it with HTML/CSS to create a movie website
+
+- Reuse and share code with Object-Oriented Programming
+- Using function from the Python Standard Library
+- Learning new concepts like Classes, Instances and Inheritance
 
