@@ -44,7 +44,7 @@ In the final project, the course introduced the tasks of different programming r
 - Mobile (Android & iOS)
 - Data Analyst
 
-I had to decide, which path to take and which final project to work on.
+I had to decide which path to take and which final project to work on.
 I choosed the Backend-Development-Path. Even though my skills & interests are way more into the Data Analyst-Specialization,
 I already [did the project](https://github.com/Thalrion/Udacity-Data-Analyst-Nanodegree/tree/master/project1) 2 months ago
 when I started the Data Analyst Nanodegree. 
