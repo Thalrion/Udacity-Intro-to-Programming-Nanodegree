@@ -35,3 +35,23 @@ Explored more advanced Python-Concepts & combined it with HTML/CSS to create a m
 - Using function from the Python Standard Library
 - Learning new concepts like classes, instances and inheritance
 
+## Project 4.1 Decide your Path: Backend-Development
+
+In the final project, the course introduced the tasks of different programming roles like:
+
+- Frontend-Development
+- Backend-Development
+- Mobile (Android & iOS)
+- Data Analyst
+
+I had to decide, which path to take and which final project to work on.
+I choosed the Backend-Development-Path. Even though my skills & interests are way more into the Data Analyst-Specialization,
+I already [did the project](https://github.com/Thalrion/Udacity-Data-Analyst-Nanodegree/tree/master/project1) 2 months ago
+when I started the Data Analyst Nanodegree. 
+
+Even though I am absolutly curious about the Mobile-Path, the Backend-Path allows me to complement my Data-Analyst skills
+because I am still lagging neccessary SQL-practise.
+
+## Project 4.2 Build a SQL reporting tool to summarize data from a large database
+
+
