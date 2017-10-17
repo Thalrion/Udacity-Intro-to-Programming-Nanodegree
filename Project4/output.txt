@@ -1,0 +1,53 @@
+5 most popular articles(article name--number of views):
+
+1. Candidate is jerk, alleges rival--338647
+2. Bears love berries, alleges bear--253801
+3. Bad things gone, say good people--170098
+4. Goats eat Google's lawn--84906
+5. Trouble for troubled troublemakers--84810
+
+
+Most popular authors(author name--number of views):
+
+1. Ursula La Multa--507594
+2. Rudolf von Treppenwitz--423457
+3. Anonymous Contributor--170098
+4. Markoff Chaney--84557
+
+
+   Date    Percent Errors
+
+2016-07-01    0.71%
+2016-07-02    0.70%
+2016-07-03    0.73%
+2016-07-04    0.69%
+2016-07-05    0.77%
+2016-07-06    0.77%
+2016-07-07    0.66%
+2016-07-08    0.76%
+2016-07-09    0.74%
+2016-07-10    0.68%
+2016-07-11    0.74%
+2016-07-12    0.68%
+2016-07-13    0.69%
+2016-07-14    0.69%
+2016-07-15    0.74%
+2016-07-16    0.69%
+2016-07-17    2.26%
+2016-07-18    0.67%
+2016-07-19    0.78%
+2016-07-20    0.70%
+2016-07-21    0.76%
+2016-07-22    0.74%
+2016-07-23    0.68%
+2016-07-24    0.78%
+2016-07-25    0.72%
+2016-07-26    0.73%
+2016-07-27    0.67%
+2016-07-28    0.72%
+2016-07-29    0.70%
+2016-07-30    0.72%
+2016-07-31    0.72%
+
+
+Reporting tool completed.
