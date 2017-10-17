@@ -34,7 +34,7 @@ If you are a Mac/Linux user, your regular terminal program will do just fine. On
 ### Installation step 3: Download VM configuration
 
 After all necessary installations have been made, you need to download
-the **VM configuration** given from the Udacity-Team by ether:
+the **VM configuration** given from the Udacity-Team by either:
 
 - Fork and clone the [github repository](https://github.com/udacity/fullstack-nanodegree-vm).
 - Download the [FSND-Virtual-Machine.zip](https://d17h27t6h515a5.cloudfront.net/topher/2017/August/59822701_fsnd-virtual-machine/fsnd-virtual-machine.zip).
