@@ -54,4 +54,4 @@ because I am still lagging neccessary SQL-practise.
 
 ## Project 4.2 Build a SQL reporting tool to summarize data from a large database
 
-
+[View project](https://github.com/Thalrion/Udacity-Intro-to-Programming-Nanodegree/tree/master/Project4)
