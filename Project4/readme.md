@@ -140,14 +140,19 @@ where articles_count.title = articles.title;
 
 ```sql
 create view views_per_day as
-SELECT log.time::date, count(*) from log group by log.time::date;
+SELECT log.time::date, count(*)
+from log 
+group by log.time::date;
 ```
 
 #### View 4
 
 ```sql
 create view errors_per_day as
-SELECT log.time::date, count(*) from log where status = '404 NOT FOUND' group by log.time::date;
+SELECT log.time::date, count(*)
+from log
+where status = '404 NOT FOUND'
+group by log.time::date;
 
 ```
 
