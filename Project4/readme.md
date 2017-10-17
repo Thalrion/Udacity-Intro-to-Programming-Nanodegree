@@ -141,7 +141,7 @@ where articles_count.title = articles.title;
 ```sql
 create view views_per_day as
 SELECT log.time::date, count(*)
-from log 
+from log
 group by log.time::date;
 ```
 
@@ -162,7 +162,7 @@ After creating all `views`, please log out by pressing `CTRL+D`.
 
 The written `Python`-code can be found [here](https://github.com/Thalrion/Udacity-Intro-to-Programming-Nanodegree/tree/master/Project4).
 
-Make sure that this file is located into the `vagrant`-directory before
+Make sure to move this file into the `vagrant`-directory before
 executing it:
 
 ```bash
