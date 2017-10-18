@@ -1,10 +1,12 @@
 #!/usr/bin/env python2.7
 
 import psycopg2
+import sys
 
-# Name of the database
-
+# Connect to database
 DB_name = "news"
+db = psycopg2.connect(database=DB_name)
+c = db.cursor()
 
 # First query joins 'log' and 'articles' on the according article-slug,
 # groups them up by the real title and counts up all logs. It modifies the
@@ -30,12 +32,35 @@ query2 = """ SELECT authors.name, sum(num) AS views
                 ORDER BY views DESC; """
 
 # Third query uses 2 views: 'views_per_day' and 'errors_per_day'.
-# It outputs the day and the according error-quote in percentage.
+# It outputs the every day where the error quote is over 1%.
 
-query3 = """ SELECT views_per_day.time::date, ROUND((errors_per_day.count * 1.0
-                / views_per_day.count * 1.0)*100, 2) as quote
+query3 = """ WITH errors_over_one AS (SELECT views_per_day.time::date,
+                ROUND((errors_per_day.count * 1.0 /
+                views_per_day.count * 1.0) * 100, 2) as quote
                 FROM views_per_day, errors_per_day
-                WHERE views_per_day.time = errors_per_day.time; """
+                WHERE views_per_day.time = errors_per_day.time)
+                SELECT *
+                FROM errors_over_one
+                WHERE quote > 1.0; """
+
+# All credits for this idea goes to some awesome Udacity-reviewer who reminded
+# me to check the case that something goes wrong with the connection.
+
+
+def connect(database_name):
+    """Connect to the PostgreSQL database.  Returns a database connection."""
+    try:
+        db = psycopg2.connect("dbname={}".format(database_name))
+        c = db.cursor()
+        return db, c
+    except psycopg2.Error as e:
+        print "Unable to connect to database"
+        # THEN perhaps exit the program
+        sys.exit(1)  # The easier method
+        # OR perhaps throw an error
+        raise e
+        # If you choose to raise an exception,
+        # It will need to be caught by the whoever called this function
 
 
 def query_database(query):
@@ -47,11 +72,11 @@ def query_database(query):
         (list) The result from the query as a list to work with
 
     """
-    db = psycopg2.connect(database=DB_name)
-    c = db.cursor()
+    db, c = connect(DB_name)
     c.execute(query)
-    return c.fetchall()
+    results = c.fetchall()
     db.close()
+    return results
 
 
 def pretty_results(result):
@@ -67,7 +92,7 @@ def pretty_results(result):
     for log in result:
         name = str(log[0])
         number_of_views = str(log[1])
-        print str(number) + ". " + name + "--" + number_of_views
+        print str(number) + ". " + name + "--" + number_of_views + " views"
         number += 1
     return ""
 
@@ -81,20 +106,21 @@ def pretty_errors(result):
         (str) A print statement displaying the results
 
     """
-    print "   Date " + "   " + "Percent Errors"
     print
     for log in result:
         date = str(log[0])
         percent_errors = str(log[1])
-        print date + "    " + percent_errors + "%"
+        print " " + date + "    " + percent_errors + "% errors"
     return ""
 
+# make sure that file was ran directly, not importe
 # Call functions to output results
 
-print "\n5 most popular articles(article name--number of views): \n"
-print pretty_results(result=query_database(query1))
-print "\nMost popular authors(author name--number of views): \n"
-print pretty_results(result=query_database(query2))
-print "\nHow many errors occured on each day: \n"
-print pretty_errors(result=query_database(query3))
-print "\nReporting tool completed. \n"
+if __name__ == '__main__':
+    print "\n5 most popular articles(article name--number of views): \n"
+    print pretty_results(result=query_database(query1))
+    print "\nMost popular authors(author name--number of views): \n"
+    print pretty_results(result=query_database(query2))
+    print "\nOn which day the error was more than 1.0%: \n"
+    print pretty_errors(result=query_database(query3))
+    print "\nReporting tool completed. \n"

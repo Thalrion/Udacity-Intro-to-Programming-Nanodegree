@@ -108,7 +108,7 @@ It will connect you to the database and execute the `SQL` commands in the downlo
 
 ## Create Views
 
-Congrats, your setup is ready to go! Before executing the `python` code,
+Congrats, your setup is ready to go! Before executing the `Python` code,
 there is a little bit more to do in the terminal.
 
 Because the asked querries were kind of complicated, I had to create `views`
@@ -178,8 +178,8 @@ This part is especially dedicated to the **Udacity-Reviewer**.
 
 The `Python`-code is splitted into 4 parts:
 
-1. A shebang-line to indicate `python`-version / importing neccessary packages (i.e. `psycopg2` to access `postgresQL`-database)
+1. A shebang-line to indicate `Python`-version / importing neccessary packages (i.e. `psycopg2` to access `postgresQL`-database)
 2. All 3 **querries** with explaining comments as string-text on the top. They are ordered according to the task they try to solve. Please note that this part only contains the **querries** in string-format - they do not actually do a **query** to the _database_
 3. The 3rd part contains 3 _functions_. The 1st one takes in a **query-textstring** (documented on the top) and outputs the results as a **list**. 2nd and 3rd _function_ are used to display the results a little bit nicer.
-4. The last part combines _Part 1_ + _Part 2_ and execute the _functions_ with
+4. The last part combines _Part 2_ + _Part 3_ and execute the _functions_ with
 the appropiate _input_ to print out the **results**.
