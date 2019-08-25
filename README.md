@@ -14,6 +14,8 @@ Built using HTML and CSS, this project demonstrates knowledge of basic website d
 
 [View project](https://thalrion.github.io/)
 
+Note from August 2019: Oh Wow, can´t believe how ugly my first HTML Site was :D
+
 ## Project 2 Code your own quiz
 
 Leveraged the power of Python to build a fill-in-the-gap-game using concepts like:
